@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/vcs1
     username: root
-    password: Phe6@nol
+    password: <>
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate.ddl-auto: update
@@ -12,5 +12,5 @@ spring:
       client:
         registration:
           github:
-            client-id: a6643325384129848334
-            client-secret: d9df80876b05534c8e82daaa9e5f5da2f7fe2cf9
+            client-id: <>
+            client-secret: <>
