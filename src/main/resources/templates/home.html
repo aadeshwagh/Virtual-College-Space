@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+    <head>    
+        <link href="/cssFiles/landingpage/css/style.css" rel="stylesheet">
+        <link href="/cssFiles/landingpage/img/favicon.png" rel="icon">
+        <link href="/cssFiles/landingpage/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+        <!-- Vendor CSS Files -->
+        <link href="/cssFiles/landingpage/vendor/aos/aos.css" rel="stylesheet">
+        <link href="/cssFiles/landingpage/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/cssFiles/landingpage/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="/cssFiles/landingpage/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="/cssFiles/landingpage/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="/cssFiles/landingpage/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+     </head>    
+<body>
+        <div th:insert="components/navbar :: nav-bar"></div>
+
+        <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Welcome to VCS</h1>
+        <h2>Virtual College Space</h2>
+        <a href="#about" class="btn-get-started">Get Started</a>
+        </div>
+    </section><!-- End Hero Section -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about">
+        <div class="container" data-aos="fade-up">
+            <div class="row about-container">
+
+            <div class="col-lg-6 content order-lg-1 order-2">
+                <h2 class="title">About Us</h2>
+                <p>
+                Virtual college Space help students to stay updated about what's going on in their college allows them to take part in various activities with the help of following features.
+
+                </p>
+
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bi bi-briefcase"></i></div>
+                <h4 class="title"><a href="">Account creation</a></h4>
+                <p class="description">System has feature for students to create account so that they can keep track of all the events and clubs they are part of</p>
+                </div>
+
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                <h4 class="title"><a href="">Club creation</a></h4>
+                <p class="description">Students can start there own clubs with the help of this features and conduct various club activities.</p>
+                </div>
+
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon"><i class="bi bi-binoculars"></i></div>
+                <h4 class="title"><a href="">Event Creation</a></h4>
+                <p class="description">Event creation is the feature provided to club admins so that they can post events that are condected by their clubs and allow students to register for them</p>
+                </div>
+
+            </div>
+            </div>
+            </div>
+
+        </div>
+        </section><!-- End About Section -->
+
+
+        <!-- ======= Services Section ======= -->
+        <section id="services">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+            <h3 class="section-title">Services</h3>
+            <p class="section-description">These some features that students can use on VCS</p>
+            </div>
+            <div class="row">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                <div class="box">
+                <div class="icon"><a href=""><i class="bi bi-briefcase"></i></a></div>
+                <h4 class="title"><a href="">Clubs</a></h4>
+                <p class="description">This section contains all the features related to clubs and their activities students can also register for a specific club in this section</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                <div class="box">
+                <div class="icon"><a href=""><i class="bi bi-card-checklist"></i></a></div>
+                <h4 class="title"><a href="">Events</a></h4>
+                <p class="description">This section will have list of all the open as well as club specific events that are or will be happning in the college. Students can also register for them as well.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                <div class="box">
+                <div class="icon"><a href=""><i class="bi bi-bar-chart"></i></a></div>
+                <h4 class="title"><a href="">Placements</a></h4>
+                <p class="description">This section contains chat rooms created by senior students and mentors for placements discussion </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                <div class="box">
+                <div class="icon"><a href=""><i class="bi bi-binoculars"></i></a></div>
+                <h4 class="title"><a href="">Posts</a></h4>
+                <p class="description">This section contains all news articles blogs related to college life and other intersting findings that concerns students</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                <div class="box">
+                <div class="icon"><a href=""><i class="bi bi-brightness-high"></i></a></div>
+                <h4 class="title"><a href="">Courses</a></h4>
+                <p class="description">In this section Teachers of various departments can share their cource videos and other study materials to students</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                <div class="box">
+                <div class="icon"><a href=""><i class="bi bi-calendar4-week"></i></a></div>
+                <h4 class="title"><a href="">Achivements</a></h4>
+                <p class="description">This section is reserved for showcasing students curricular ,co-curricular and extra-curricular achivements</p>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        </section><!-- End Services Section -->
+
+    
+        <!-- ======= Contact Section ======= -->
+        <section id="contact">
+        <div class="container">
+            <div class="section-header">
+            <h3 class="section-title">Contact</h3>
+            <p class="section-description">Contect us for possible bugs and improvements</p>
+            </div>
+        </div>
+
+        <!-- Uncomment below if you wan to use dynamic maps -->
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+
+            <div class="col-lg-3 col-md-4">
+
+                <div class="info">
+                <div>
+                    <i class="bi bi-envelope"></i>
+                    <p>aadesh.wagh19@vit.edu</p>
+                </div>
+
+                
+                </div>
+
+                <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-5 col-md-8">
+                <div class="form">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group mt-3">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+        <div class="container">
+
+        </div>
+        </div>
+
+    
+    </footer><!-- End Footer -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="/cssFiles/landingpage/vendor/aos/aos.js"></script>
+    <script src="/cssFiles/landingpage/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/cssFiles/landingpage/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/cssFiles/landingpage/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/cssFiles/landingpage/vendor/php-email-form/validate.js"></script>
+    <script src="/cssFiles/landingpage/vendor/purecounter/purecounter.js"></script>
+    <script src="/cssFiles/landingpage/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/cssFiles/landingpage/js/main.js"></script>
+        
+</body>
+</html>

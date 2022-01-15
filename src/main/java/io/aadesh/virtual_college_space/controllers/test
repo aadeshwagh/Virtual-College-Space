@@ -1,0 +1,24 @@
+ @GetMapping("/addeventmember/{eventId}")
+    public String addeventMember(@AuthenticationPrincipal OAuth2User principal, @PathVariable String eventId,
+            Model model) {
+        Set<Student> students;
+        Set<Event> events;
+        if (principal == null || principal.getAttribute("login") == null) {
+            return "index";
+        }
+        Event event = eventRepo.findById(eventId).get();
+        Student student = studentRepo.findById(principal.getAttribute("login")).get();
+        students = event.getStudents();
+        students.add(student);
+
+        event.setStudents(students);
+
+        events = student.getevents();
+        events.add(event);
+        student.setevents(events);
+
+        eventRepo.save(event);
+        studentRepo.save(student);
+
+        return geteventById(eventId, principal, model);
+    }

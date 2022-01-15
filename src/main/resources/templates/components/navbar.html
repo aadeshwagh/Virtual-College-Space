@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>    
+    <link href="../../static/cssFiles/landingpage/css/style.css" rel="stylesheet">
+    <link href="../../static/cssFiles/landingpage/img/favicon.png" rel="icon">
+    <link href="../../static/cssFiles/landingpage/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="../../static/cssFiles/landingpage/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../static/cssFiles/landingpage/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../static/cssFiles/landingpage/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../static/cssFiles/landingpage/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../static/cssFiles/landingpage/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../static/cssFiles/landingpage/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+ </head>     
+<body>
+
+    <div th:fragment="nav-bar">
+      <div>
+        <header id="header" class="fixed-top d-flex align-items-center ">
+            <div class="container d-flex justify-content-between align-items-center">
+        
+              <div id="logo">
+              </div>
+              
+              <nav id="navbar" class="navbar">
+                <ul>
+                  <li><a class="nav-link scrollto active" href="http://localhost:8080/">Home</a></li>
+                  <li><a class="nav-link scrollto" th:href="@{/getallclubs}">Clubs</a></li>
+                  <li><a class="nav-link scrollto" th:href="@{/getallevents}">Events</a></li>
+                  <li><a class="nav-link scrollto " th:href="@{/allposts}">Posts</a></li>
+                  <li><a class="nav-link scrollto" th:href="@{/placements}">Placements</a></li>
+                  <li class="dropdown"><a href="#"><span>Acedemics</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                      <li><a th:href="@{/notes}">Courses</a></li>
+                      <li><a th:href="@{/allachivements}">Achivements</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+              </nav>
+            </div>
+          </header>
+
+
+    </div>      
+
+    </div>
+    
+</body>
+</html>
